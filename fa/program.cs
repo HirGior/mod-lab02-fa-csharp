@@ -12,7 +12,11 @@ namespace fans
     public Dictionary<char, State> Transitions;
     public bool IsAcceptState;
   }
-
+  
+  public State()
+    {
+        Transitions = new Dictionary<char, State>();
+    }
 
   public class FA1
   {
